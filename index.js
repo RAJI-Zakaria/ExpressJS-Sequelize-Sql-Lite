@@ -4,18 +4,20 @@
 
 const express = require('express')
 const app = express()
-const port = 3000
-const db = require('./models')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 
 app.use(cors())
-app.use(bodyParser.json())
-
-// we will use routes to handle requests
-const routes = require('./routes')
-app.use('/api', routes)
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+
+const routes = require('./routes')
+app.use('/api', routes) // Mount the routes under the '/api' prefix
+
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`)
 })
