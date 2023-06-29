@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-sequelize-sql-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAJI-Zakaria/ExpressJS-Sequelize-Sql-Lite.git"
+  },
+  "author": "zakaria raji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAJI-Zakaria/ExpressJS-Sequelize-Sql-Lite/issues"
+  },
+  "homepage": "https://github.com/RAJI-Zakaria/ExpressJS-Sequelize-Sql-Lite#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
